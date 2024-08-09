@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c9e85964af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.PNG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer & MERN Stack Developer</p>
+                <h1>Hi, I'm <span>Hammad</span> Naseem <br> From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate Front-End and MERN Stack Developer with a strong background in creating dynamic and responsive web applications. With expertise in HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB, I excel at building seamless user interfaces and robust backend systems. My dedication to continuous learning and my attention to detail enable me to deliver high-quality projects that meet client needs and industry standards.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Software Development</span><br>Software Development using Mern Stack</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-Current</span><br>Freelance Front-end Developer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Mern Stack Development from AK-BQ Karachi</li>
+                        <li><span>2018</span><br>Fsc from SMSC Karachi</li>
+                        <li><span>2016</span><br>Matriculation from IRUMA Karachi</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>Creating visually appealing and user-friendly interfaces that enhance user experience through effective layout, color schemes, and typography.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Building and maintaining websites by writing clean and efficient code, ensuring functionality, performance, and security.</p>
+                </div>    
+                 <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Software Development</h2>
+                    <p>Developing robust and scalable applications using MongoDB, Express.js, React, and Node.js, ensuring seamless performance and efficient data management.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                <img src="images/work-1.png"/> 
+                <div class="layer">
+                    <h3>Library Management System</h3>
+                    <p>This software enhances the efficiency of library operations, ensuring a seamless experience for both librarians and students.</p>
+                    <a href="https://lms-fe-six.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png"/> 
+                <div class="layer">
+                    <h3>Blog Website</h3>
+                    <p>A user-friendly blog platform developed using the MERN stack. It features a clean design and allows for easy content creation and management, providing an engaging experience for readers.</p>
+                    <a href="https://blog-21zk.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png"/>
+                <div class="layer">
+                    <h3>Ecommerce Website</h3>
+                    <p>A streamlined online store featuring a selection of quality products, designed for an easy and enjoyable shopping experience.</p>
+                    <a href="https://hammad890.github.io/Dynamic-e-commerce-website-/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> 
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> hammadbro6@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +92-3232200556</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100009587434857"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/HammadN76342073"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/hammad.pov/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/hammad-naseem-4201ba250/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/HammadNaseemResume.pdf" download class="btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+           <P>Copyright &copy; 2024 Hammad. All rights reserved.</P>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const tabLinks= document.getElementsByClassName("tab-links")
+        const tabContents= document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for (tablink of tabLinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabContents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";   
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3ql1wWFSGp6bGTJ6j6HXq08IPJz_aHwLRox3Vi8fwQkq0G_YDwdzLFAG1ojcg_my5dw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML= ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
