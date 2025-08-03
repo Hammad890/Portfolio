@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(images/background.jpeg);
+    background-image: url(images/background.png);
     background-position: right top 30px;
 }
 .container{
@@ -302,7 +302,7 @@ nav .fa-solid{
 } 
 @media only screen and (max-width:600px){
     #header{
-        background-image: url(images/backgroundphone.jpeg);
+        background-image: url(images/background.jpeg);
     }
     .header-text{
         margin-top: 100%;
